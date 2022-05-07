@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Questrial';
+    src: url('../../font/Questrial-Regular.ttf');
+    font-style: normal;
+    font-weight: lighter;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar de aca */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(194, 191, 191, 0.089);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 5vh;
+    list-style: none;
+}
+.navbar li a {
+    text-decoration: none;
+    color: #151515;
+}
+
+.navbar li a:hover{
+    color: rgb(131, 131, 131);
+    text-decoration: underline;
+}
+
+.mobile-nav-toggle{
+    display: none;
+}
+
+/* hasta de aca */
+
+.quienessomos{
+    position: absolute;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3em;
+    background-color: #151515;
+    height: 2.5em;
+    padding-top: 0.6em;
+    text-align: center;
+    color: white;
+    width: 60%;
+    float: right;
+    z-index: 1;
+    top: 1.2em;
+    left: 40%;
+}
+
+.text0{
+    font-family:'Questrial';
+    padding-top: 3em;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    line-height: 1.7em;
+    font-size: 0.8em;
+}
+
+.text1{
+    font-family:'Questrial';
+    padding-top: 17em;
+    padding-left: 2em;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    line-height: 1.7em;
+    font-size: 0.8em;
+}
+
+.btn{
+    font-family:'Roboto Mono', monospace;
+    background-color: #CE9977;
+    border-color:#CE9977 ;
+    font-size: 2.5vw;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.fecha1,.fecha2{
+    font-family:'Questrial';
+    font-size: 1.5em;
+    text-align:center;
+    padding-top: 5vw;
+}
+
+.artista1,.artista2{
+    font-family:'Questrial';
+    font-size: 0.8em;
+    text-align:center;
+    padding-top: -5vw;
+}
+
+.img-fluid{
+    padding-top: 2.5vw;
+}
+
+#imagen2{
+    padding-left: 2em;
+}
+
+.footer{
+    height: 25vh;
+    background-color: #151515;
+    color: rgb(209, 209, 209);
+    display: flex;
+    align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto{
+    width: 500px;
+}
+
+.icons a i{
+    margin-left: 30px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.footer{
+    height: 25vh;
+    background-color: #151515;
+    color: rgb(209, 209, 209);
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px){
+    #imagen1{
+        object-fit: cover;
+        height: 20em;
+        width: 100%;
+    }
+    .quienessomos{
+        width: 90%;
+        left: 5%;
+        top:2.5em;
+        height: 3em;
+        padding-top: 6vw;
+    }
+    .text0{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .text1{
+        position: absolute;
+        padding-right: 2em;
+        padding-left: 2em;
+        visibility: hidden;
+    }
+    .btn{
+        margin-right: 2em;
+        font-size: 3vw;
+    }
+    #imagen3{
+        padding-right: 2em;
+    }
+    .footer{
+        height: 35vh;
+        margin-top: 4em;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column ;
+    }
+
+    .texto{
+        margin: 30px 0;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .navbar{
+        --gap: 2em;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 50%;
+        flex-direction: column;
+        padding: 30vh 2em;
+        height: 100vh;
+        background: #616060d0;
+        align-items: flex-start;
+        backdrop-filter: blur(1rem);
+        transform: translatex(100%);
+    }
+
+    .navbar[data-visible='true']{
+        transform: translatex(0%);
+    }
+
+    .navbar li a {
+        color: #fff;
+    } 
+    
+    .footer{
+        height: 50vh;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column ;
+    }
+
+    .texto{
+        margin: 30px 0;
+        width: 250px;
+    }
+    
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        width: 1rem;
+        border: 0;
+        height: 1rem;
+        top: 2rem;
+        right: 2rem;
+    }
+    .navbar li a:hover{
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
+    }
+
+}

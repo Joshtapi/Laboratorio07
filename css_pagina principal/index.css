@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background-color: #FBFAF8;
+  font-family: 'Roboto Mono', monospace;
+  position: absolute;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(194, 191, 191, 0.089);
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    list-style: none;
+}
+.navbar li a {
+    text-decoration: none;
+    color: #151515;
+}
+
+.navbar li a:hover{
+    color: rgb(131, 131, 131);
+    text-decoration: underline;
+}
+
+.mobile-nav-toggle{
+    display: none;
+}
+
+.section{
+    text-align: center;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+.hero {
+    margin-left: 50px;
+    background: #151515;
+    width: 600%;
+    height: 800px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;;
+    font-size: 100px;
+    line-height: 100px;
+    color: #151515;
+    background: -webkit-linear-gradient(0deg, #FFF 335px, #151515 285px);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    grid-area: 2 / 2 / 3 / 4;
+    align-self: start;
+    margin-top: -70px;
+}
+
+
+.header {
+        margin-top:69px ;
+        width: 100px;
+        display: grid;
+        grid-gap: 48px 0;
+        grid-template: 190px 224px 386px / 165px 285px 229px 246px 65px 449px;
+        margin-left: 63px;
+    
+    }
+
+.header p {
+       
+        margin-top: 202px;
+        margin-left: 754px;
+        font-size: 22px;
+        line-height: 32px;
+        width: 350px;
+        text-align: justify;
+    }
+
+    
+.imagen1{
+    margin-left: 742px;
+}
+.your-day{
+    
+margin: 95px 0;
+width: 304px;
+margin-left: -526px;
+font-size: 22px;
+margin-top: -438px
+}
+.your-day h2{
+    font-weight: 400px;
+    font-weight: 900;
+    font-size: 55px;
+}
+
+.img-grid-2 {
+    margin-left: 132px;
+    margin-top: 74px;
+}
+
+.img-grid-3 {
+    margin-left: 103px;
+    margin-top: 70px;
+   
+}
+.come {
+    background: #151515;
+    padding: 48px 24px 47px;
+    padding: 17px 47px 12px 75px;
+    margin-right: 198px;
+    margin-left: 878px;
+    margin-top: -724px;
+    width: 18.5%;
+}
+.come h2 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 900;
+    /* font-weight: 100; */
+    line-height: 45px;
+    margin-left: 27px;
+}
+
+.come p {
+    margin-top: 24px;
+    color: #FFFFFF;
+    margin-top: 52px;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 28px;
+    margin-left: 21px;
+}
+
+.come {
+    padding: 18px 91px 31px 78px;
+    grid-area: 3/ 3 / 4 / 4;
+}
+/* footer de aca */
+.footer{
+    height: 25vh;
+    background-color: #151515;
+    color: rgb(209, 209, 209);
+    display: flex;
+    align-items: center;
+    margin-top: 400px;
+    width: 100%;
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 100px;
+}
+.texto{
+    width: 628px;
+    margin-left: -128px;
+}
+
+.icons a i{
+    margin-left: 30px;
+    color: #fff;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 700px){
+
+    .navbar{
+        --gap: 2em;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 50%;
+        flex-direction: column;
+        padding: 30vh 2em;
+        height: 100vh;
+        background: #616060d0;
+        align-items: flex-start;
+        backdrop-filter: blur(1rem);
+        transform: translatex(100%);
+    }
+
+    .navbar[data-visible='true']{
+        transform: translatex(0%);
+    }
+
+    .navbar li a {
+        color: #fff;
+    } 
+    
+    .footer{
+        height: 50vh;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column ;
+    }
+
+    .texto{
+        margin: 30px 0;
+        width: 250px;
+    }
+    .img-ubicacion{
+        width: 100%;
+    }
+    
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        width: 1rem;
+        border: 0;
+        height: 1rem;
+        top: 2rem;
+        right: 2rem;
+    }
+    .navbar li a:hover{
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
+    }
+
+}
