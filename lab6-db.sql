@@ -114,4 +114,3 @@ CREATE TABLE `personal` (
 
 INSERT INTO `personal` (`ID`, `usuario`,`password`) VALUES ('1', 'Joshua','1234');
 
-

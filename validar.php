@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 $usuario=$_POST['usuario'];
@@ -5,7 +6,7 @@ $password=$_POST['password'];
 $_SESSION['usuario']=$usuario;
 $xc=mysqli_connect("localhost", "root", "", "db-lab6");
 
-$sql = "SELECT * FROM usuario where usuario = '$usuario' and password = '$password'";
+$sql = "SELECT * FROM `db-lab6`.personal where usuario = '$usuario' and password = '$password'";
 
 $res = mysqli_query($xc, $sql); 
 $filas = mysqli_fetch_array($res);

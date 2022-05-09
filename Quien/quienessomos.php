@@ -2,10 +2,11 @@
 <?php
     include('../funciones/funciones.php');
     if(isset( $_SESSION['usuario'])){ 
-        header("Location : index.html");
+        header("Location: ../index.html");
      }
      session_start();
     $xc = conectar();
+    
     $sql = "SELECT * FROM navar2";
     $res = mysqli_query($xc, $sql);
 
